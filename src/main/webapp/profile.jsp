@@ -18,7 +18,9 @@
 <div>Phone Number:</div>
 <div><%= session.getAttribute("phoneNumber") %>
 </div>
-
+<div>
+Instance number: <%= System.getenv("CF_INSTANCE_INDEX") %>
+</div>
 <form action="logout" method="post">
     <input type="submit" value="Logout">
 </form>
